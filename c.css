@@ -1,0 +1,244 @@
+
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffafd;
+  color: #333;
+}
+
+
+header {
+  background: linear-gradient(90deg, #ffb6c1, #d8bfd8);
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffe4e1;
+}
+
+
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+.section h2 {
+  color: #d36b9f;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+
+.login-section form {
+  display: inline-block;
+  background: #fff0f5;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  text-align: right;
+}
+.login-section label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-weight: bold;
+}
+.login-section input {
+  width: 250px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.login-section button {
+  margin-top: 15px;
+  background: #d36b9f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.login-section button:hover {
+  background: #b94c83;
+}
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.register-link a {
+  color: #d36b9f;
+  text-decoration: none;
+  font-weight: bold;
+}
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.courses-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.course-card {
+  background: #ffe4f0;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.course-card h3 {
+  color: #d36b9f;
+}
+.course-card button {
+  margin-top: 10px;
+  background: #d36b9f;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  background: #ffd6eb;
+}
+
+
+footer {
+  background: #d8bfd8;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+/* 🌸 للشاشات الصغيرة - الموبايل */
+@media (max-width: 768px) {
+  /* الهيدر */
+  header h1 {
+    font-size: 20px;
+  }
+  nav a {
+    margin: 0 6px;
+    font-size: 13px;
+  }
+
+  /* تسجيل الدخول */
+  .login-section form {
+    width: 95%;
+    padding: 15px;
+  }
+  .login-section input {
+    width: 100%;
+  }
+
+  /* الكورسات */
+  .courses-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .course-card {
+    width: 95%;
+  }
+
+  /* الأقسام */
+  .section {
+    padding: 25px 8px;
+  }
+  .section h2 {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* الهيدر */
+  header h1 {
+    font-size: 22px;
+  }
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  /* تسجيل الدخول */
+  .login-section form {
+    width: 90%;
+    padding: 15px;
+  }
+  .login-section input {
+    width: 100%;
+  }
+
+  /* الكورسات */
+  .courses-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .course-card {
+    width: 90%;
+  }
+
+  /* الأقسام */
+  .section {
+    padding: 30px 10px;
+  }
+  .section h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* الهيدر */
+  header h1 {
+    font-size: 24px;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  /* تسجيل الدخول */
+  .login-section form {
+    width: 80%;
+    padding: 20px;
+  }
+  .login-section input {
+    width: 90%;
+  }
+
+  /* الكورسات */
+  .courses-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .course-card {
+    width: 45%; /* صفين */
+  }
+
+  /* الأقسام */
+  .section {
+    padding: 40px 15px;
+  }
+  .section h2 {
+    font-size: 22px;
+  }
+}
