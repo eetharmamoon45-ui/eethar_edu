@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب</title>
+  <link rel="stylesheet" href="c.css">
+</head>
+<body>
+
+  <header>
+    <h1>منصتي 🎓</h1>
+  </header>
+
+  <section class="register-section">
+    <h2>إنشاء حساب جديد</h2>
+    <form onsubmit="return validateRegisterForm()">
+      <label>الاسم الأول:</label>
+      <input type="text" id="fname" required>
+
+      <label>الاسم الأخير:</label>
+      <input type="text" id="lname" required>
+
+      <label>البريد الإلكتروني:</label>
+      <input type="email" id="email" required>
+
+      <label>كلمة المرور:</label>
+      <input type="password" id="password" required>
+
+      <label>تأكيد كلمة المرور:</label>
+      <input type="password" id="confirmPassword" required>
+
+      <label>العمر:</label>
+      <input type="number" id="age" min="5" required>
+
+      <label>نوع الحساب:</label>
+      <select id="role" required>
+        <option value="">اختر...</option>
+        <option value="student">طالب</option>
+        <option value="teacher">أستاذ</option>
+        <option value="parent">ولي أمر</option>
+      </select>
+
+      <button type="submit">تسجيل</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 منصتي التعليمية | جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    function validateRegisterForm() {
+      let pass = document.getElementById("password").value;
+      let confirmPass = document.getElementById("confirmPassword").value;
+
+      if (pass !== confirmPass) {
+        alert("⚠ كلمة المرور غير متطابقة!");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+</body>
+</html>
